@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Шифрование вложений</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <h1>Шифрование вложений</h1>
+      <p class="lead">AES-256-GCM + PBKDF2-HMAC-SHA256</p>
+
+      <div class="mode" role="radiogroup" aria-label="Режим работы">
+        <label>
+          <input type="radio" name="mode" value="encrypt" checked>
+          Зашифровать
+        </label>
+        <label>
+          <input type="radio" name="mode" value="decrypt">
+          Расшифровать
+        </label>
+      </div>
+
+      <label class="field">
+        <span>Файл</span>
+        <input id="fileInput" type="file">
+      </label>
+
+      <label class="field">
+        <span>Имя результата</span>
+        <input id="outputName" type="text" placeholder="Выберите файл">
+      </label>
+
+      <label class="field">
+        <span>Пароль</span>
+        <input id="password" type="password" autocomplete="new-password">
+      </label>
+
+      <label class="field" id="repeatField">
+        <span>Повтор пароля</span>
+        <input id="passwordRepeat" type="password" autocomplete="new-password">
+      </label>
+
+      <label class="check">
+        <input id="showPassword" type="checkbox">
+        Показать пароль
+      </label>
+
+      <button id="runButton" type="button">Выполнить</button>
+      <p id="status" class="status">Файл не выбран.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

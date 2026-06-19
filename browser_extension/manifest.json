@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Локальное шифрование вложений",
+  "description": "Шифрование и расшифрование почтовых вложений локально в браузере.",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Шифрование вложений"
+  }
+}

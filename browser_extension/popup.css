@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 360px;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #151515;
+  background: #f6f7f8;
+}
+
+.app {
+  padding: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.lead {
+  margin: 6px 0 14px;
+  font-size: 12px;
+  color: #4a4f55;
+}
+
+.mode {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.mode label,
+.check {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+}
+
+.field {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  min-height: 32px;
+  border: 1px solid #b7bdc4;
+  border-radius: 4px;
+  background: #fff;
+  padding: 6px 8px;
+  font: inherit;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+.check {
+  margin: 4px 0 14px;
+}
+
+button {
+  width: 100%;
+  min-height: 36px;
+  border: 0;
+  border-radius: 4px;
+  background: #087c8b;
+  color: #fff;
+  cursor: pointer;
+  font: 600 14px "Segoe UI", Arial, sans-serif;
+}
+
+button:disabled {
+  cursor: wait;
+  background: #8aa9ae;
+}
+
+.status {
+  min-height: 34px;
+  margin: 12px 0 0;
+  overflow-wrap: anywhere;
+  color: #3f464d;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.status.error {
+  color: #9b1c1c;
+}
+
+.status.success {
+  color: #116329;
+}
