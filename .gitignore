@@ -1,15 +1,26 @@
 .venv/
 .idea/
+.vscode/
 __pycache__/
 *.py[cod]
 
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
 
 tmp/
 output/
 .codex_pptx_media/
+*.pptx
+dist/
+build/
 
 .env
 .env.*
+
+node_modules/
+
+Thumbs.db
+.DS_Store
